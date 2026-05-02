@@ -1,0 +1,130 @@
+/* ═══════════════════════════════════════════════════════
+   PORTFOLIO — projects.css
+   Projects Section & Project Cards
+   ═══════════════════════════════════════════════════════ */
+
+.projects { background: #0f0f0f; }
+
+/* Grid 3 Kolom Responsif */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .projects-grid { grid-template-columns: 1fr; gap: 24px; }
+  .card-body { padding: 24px; }
+}
+
+.project-card {
+  background: #1a1a1a;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.3);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Card thumbnail (Bagian Gambar/Gradients atas) */
+.card-thumb {
+  height: 220px; /* Lebih tinggi agar proporsional seperti referensi */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.thumb-game  { background: linear-gradient(135deg, #1e3a5f, #2563EB); }
+.thumb-app   { background: linear-gradient(135deg, #064e3b, #059669); }
+.thumb-lms   { background: linear-gradient(135deg, #3730a3, #6366F1); }
+.thumb-data  { background: linear-gradient(135deg, #7c2d12, #F59E0B); }
+
+.thumb-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 70% 30%, rgba(255,255,255,.08) 0%, transparent 60%),
+                    repeating-linear-gradient(45deg, rgba(255,255,255,.03) 0px, rgba(255,255,255,.03) 1px, transparent 1px, transparent 12px);
+}
+
+.thumb-icon {
+  font-size: 3.5rem;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,.3));
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.project-card:hover .thumb-icon { transform: scale(1.15) translateY(-5px); }
+
+/* Card body */
+.card-body {
+  padding: 32px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-family: var(--font-sans); /* Memakai sans agar lebih modern seperti gambar */
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.card-desc {
+  font-size: .95rem;
+  color: var(--gray-400);
+  line-height: 1.6;
+  margin-bottom: 32px;
+  flex-grow: 1; /* Mendorong link ke paling bawah */
+}
+
+/* Gaya Link "View Project" seperti gambar referensi */
+.view-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: .9rem;
+  font-weight: 600;
+  color: var(--white);
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
+  transition: border-color var(--transition), color var(--transition);
+  align-self: flex-start; /* Tetap di sebelah kiri */
+}
+
+.view-link .arrow {
+  transition: transform var(--transition);
+}
+
+.project-card:hover .view-link {
+  color: var(--blue-400);
+  border-bottom-color: var(--blue-500);
+}
+
+.project-card:hover .view-link .arrow {
+  transform: translate(4px, -4px); /* Efek panah melesat */
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .projects-grid { grid-template-columns: 1fr; gap: 24px; }
+  .card-body { padding: 24px; }
+}

@@ -1,0 +1,43 @@
+/* ═══════════════════════════════════════════════════════
+   PORTFOLIO — footer.css
+   Footer Section
+   ═══════════════════════════════════════════════════════ */
+
+/* ── FOOTER ── */
+.footer {
+  background: var(--gray-900);
+  padding: 32px 0;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--white);
+  font-style: italic;
+}
+
+.footer-copy {
+  font-size: .82rem;
+  color: var(--gray-400);
+}
+
+.footer-top {
+  font-size: .82rem;
+  color: var(--gray-400);
+  transition: color var(--transition);
+}
+
+.footer-top:hover { color: var(--blue-400); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .footer-inner { flex-direction: column; text-align: center; gap: 12px; }
+}
