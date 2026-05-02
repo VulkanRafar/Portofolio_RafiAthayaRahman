@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Information Systems Developer</title>
+  <link rel="stylesheet" href="../style/variables.css" />
+  <link rel="stylesheet" href="../style/base.css" />
+  <link rel="stylesheet" href="../style/animations.css" />
+  <link rel="stylesheet" href="../style/buttons.css" />
+  <link rel="stylesheet" href="../style/navbar.css" />
+  <link rel="stylesheet" href="../style/hero.css" />
+  <link rel="stylesheet" href="../style/about.css" />
+  <link rel="stylesheet" href="../style/projects.css" />
+  <link rel="stylesheet" href="../style/contact.css" />
+  <link rel="stylesheet" href="../style/footer.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <img src="../assets/logo.png" alt="isdev logo" class="nav-logo-img" />
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#" class="btn-cv" download>Download CV</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-eyebrow">
+      <span class="eyebrow-dot"></span>
+      <span>Halo! saya</span>
+    </div>
+    <h1 class="hero-title">
+      <span class="line">Rafi Athaya Rahman</span>
+      <span class="line italic-serif">Information Systems</span>
+    </h1>
+    <p class="hero-sub" id="typewriter-text">UI/UX &amp; Data Science Enthusiast</p>
+    
+    <p class="hero-desc">
+      Menjembatani logika pemrograman dengan desain antarmuka<br class="br-desktop" />
+      yang intuitif dan fungsional — dari hulu ke hilir.
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">Explore My Work</a>
+      <a href="#contact" class="btn btn-outline">Let's Connect</a>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-deco deco-ring"></div>
+    <div class="hero-deco deco-dot-grid"></div>
+  </section>
+
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">01</span>
+        <span>About Me</span>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Building systems that<br /><em>think</em> and <em>feel.</em></h2>
+          <p>
+            Saya mahasiswa Sistem Informasi yang terbiasa menangani proyek dari hulu ke hilir —
+            mulai dari analisis data prediktif dengan model LSTM/RNN, hingga perancangan antarmuka
+            yang berpusat pada pengguna.
+          </p>
+          <p>
+            Saya percaya bahwa software yang hebat bukan hanya soal kode yang berjalan,
+            tapi tentang pengalaman yang dirasakan oleh setiap pengguna.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">4+</span>
+              <span class="stat-label">Proyek Selesai</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">4</span>
+              <span class="stat-label">Bidang Keahlian</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">∞</span>
+              <span class="stat-label">Semangat Belajar</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="profile-card">
+            <div class="profile-avatar">
+              <div class="avatar-inner">
+                <img src="../assets/foto-3x4.jpg" alt="Foto Rafi Athaya Rahman" class="avatar-photo" />
+              </div>
+              <div class="avatar-ring"></div>
+            </div>
+            <div class="profile-tags">
+              <span class="ptag">🎮 Game Dev</span>
+              <span class="ptag">📊 Data Science</span>
+              <span class="ptag">🎨 UI/UX</span>
+              <span class="ptag">⚙️ Software Dev</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ░░ PROJECTS ░░ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">02</span>
+        <span>Projects</span>
+      </div>
+      <h2 class="section-title">Selected work.</h2>
+      <p class="section-sub">Proyek-proyek yang mencerminkan pendekatan saya terhadap teknologi dan desain.</p>
+      <div class="projects-grid">
+
+        <!-- Card 1 -->
+        <article class="project-card">
+          <div class="card-thumb thumb-game">
+            <div class="thumb-pattern"></div>
+            <div class="thumb-icon">🎮</div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Ascenvere</h3>
+            <p class="card-desc">
+              RPG game dengan mekanik combat yang dalam, sistem custom movement yang presisi,
+              dan UI star-borders yang hand-crafted. Dibangun penuh di atas Roblox Studio.
+            </p>
+            <a href="#" class="view-link">View Project <span class="arrow">↗</span></a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="project-card">
+          <div class="card-thumb thumb-app">
+            <div class="thumb-pattern"></div>
+            <div class="thumb-icon">♻️</div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">GrowCycle App</h3>
+            <p class="card-desc">
+              Aplikasi manajemen sampah organik berbasis reward system. Mendorong
+              perilaku daur ulang melalui gamifikasi dan antarmuka yang ramah pengguna.
+            </p>
+            <a href="#" class="view-link">View Project <span class="arrow">↗</span></a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="project-card">
+          <div class="card-thumb thumb-lms">
+            <div class="thumb-pattern"></div>
+            <div class="thumb-icon">📚</div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">PondasiLMS</h3>
+            <p class="card-desc">
+              Platform Learning Management System yang dirancang untuk penguasaan IT
+              secara terstruktur. Fokus pada UX pendidikan dan alur pembelajaran yang jelas.
+            </p>
+            <a href="#" class="view-link">View Project <span class="arrow">↗</span></a>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="project-card">
+          <div class="card-thumb thumb-data">
+            <div class="thumb-pattern"></div>
+            <div class="thumb-icon">📈</div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Prediksi Churn</h3>
+            <p class="card-desc">
+              Model prediktif berbasis deep learning (LSTM/RNN) untuk forecasting churn
+              pelanggan dan prediksi konsumsi energi listrik dari data time-series.
+            </p>
+            <a href="#" class="view-link">View Project <span class="arrow">↗</span></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">03</span>
+        <span>Contact</span>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-left">
+          <h2 class="section-title">Let's build<br /><em>something great.</em></h2>
+          <p>
+            Tertarik berkolaborasi atau sekadar ingin berdiskusi soal teknologi dan desain?
+            Saya selalu terbuka untuk percakapan yang bermakna.
+          </p>
+          <div class="contact-socials">
+            <a href="#" class="social-link" aria-label="GitHub">GitHub</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Nama</label>
+              <input type="text" id="name" name="name" placeholder="Nama lengkap kamu" autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="email@kamu.com" autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="5" placeholder="Ceritakan ide atau proyekmu..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Send Message
+              <span class="btn-arrow">→</span>
+            </button>
+            <p class="form-success" id="form-success">✓ Pesan terkirim! Saya akan membalas secepatnya.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">isdev</span>
+      <span class="footer-copy">© 2026 — Crafted with precision &amp; passion.</span>
+      <a href="#home" class="footer-top">↑ Back to top</a>
+    </div>
+  </footer>
+
+  <script src="../javascript/script.js"></script>
+</body>
+</html>
